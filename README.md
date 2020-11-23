@@ -14,7 +14,7 @@ This repository will provide the steps to set up and use ANSYS Fluent leveraging
 
 ## Architecture
 
-
+![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Architecture.PNG)
 
 
 ## Steps to deploy Azure CycleCloud
