@@ -51,7 +51,5 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
 (5) ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_1.PNG)
  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_2.PNG)
  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_3.PNG)
-
-
-https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
+![alt text](https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8)
 
