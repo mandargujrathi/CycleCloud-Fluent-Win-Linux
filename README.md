@@ -1,4 +1,4 @@
-# CycleCloud-Fluent-Win-Linux
+# Deploying ANSYS-Fluent on Azure HPC in a Windows-Linux mode
 
 This repository will provide the steps to deploy and use ANSYS Fluent on Azure leveraging Azure VM's for High Performance Computing. 
 This deployment will feature the following: \
