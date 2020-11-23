@@ -47,7 +47,8 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
 (3) Change the directory to ANSYS-Fluent/templates and upload the template to cyclecloud using \
   cyclecloud import_template -f pbs-ansys.txt
 (4) The cluster template for ANSYS using PBS will now appear in the CycleCloud portal. 
-
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys-Cluster.PNG)
+(5) 
 
 
 https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
