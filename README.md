@@ -4,10 +4,10 @@ This repository will provide the steps to set up and use ANSYS Fluent leveraging
 
 ## Pre-requisites
 
-(1) Azure Subscription 
-(2) Subscription whitelisted for Azure NetApp Files (ANF)
-(3) Quota for HB_v2 VM's in the region of your choice
+(1) Azure Subscription \
+(2) Subscription whitelisted for Azure NetApp Files (ANF) \
+(3) Quota for HB_v2 VM's in the region of your choice \
 
 ### Services used
-(1) Azure Cycle Cloud
-(2) Azure NetApp Files
+(1) Azure Cycle Cloud \
+(2) Azure NetApp Files \
