@@ -24,8 +24,12 @@ This deployment will feature the following: \
 
 ## Deploy Azure CycleCloud
 Azure CycleCloud is a free application that provides a simple, secure, and scalable way to manage compute and storage resources for HPC and Big Compute workloads.
-The Azure portal has a marketplace image to deploy Azure CycleCloud. The link below outlines the steps to deploy Azure CycleCloud. \
+
+(1) The Azure portal has a marketplace image to deploy Azure CycleCloud. The link below outlines the steps to deploy Azure CycleCloud. \
 https://docs.microsoft.com/en-us/azure/cyclecloud/qs-install-marketplace?view=cyclecloud-8
+
+(2) On the Azure bash or Windows Subsystem for Linux, install the CycleCloud CLI \
+https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/install-cyclecloud-cli?view=cyclecloud-8
 
 ## Deploy Azure NetApp Files
 The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp Files. This will be used as common share to the Windows and Linux nodes.
@@ -38,4 +42,13 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
 (3) Create a NFS Volume: https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-quickstart-set-up-account-create-volumes?tabs=azure-portal#create-nfs-volume-for-azure-netapp-files
 
 ## Deploy a CycleCloud Project for ANSYS Fluent. 
+(1) Download the **ANSYS-Fluent** project folder from this repository to bash environment. 
+(2) Upload the folder to your cyclecloud locker, using cyclecloud project upload <locker-name>
+(3) Change the directory to ANSYS-Fluent/templates and upload the template to cyclecloud using \
+  cyclecloud import_template -f pbs-ansys.txt
+(4) The cluster template for ANSYS using PBS will now appear in the CycleCloud portal. 
+
+
+
+https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
 
