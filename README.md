@@ -42,15 +42,21 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
 (3) Create a NFS Volume: https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-quickstart-set-up-account-create-volumes?tabs=azure-portal#create-nfs-volume-for-azure-netapp-files
 
 ## Deploy a CycleCloud Project for ANSYS Fluent. 
-(1) Download the **ANSYS-Fluent** project folder from this repository to bash environment. 
-(2) Upload the folder to your cyclecloud locker, using cyclecloud project upload <locker-name>
+(1) Download the **ANSYS-Fluent** project folder from this repository to bash environment. \
+(2) Upload the folder to your cyclecloud locker, using cyclecloud project upload <locker-name> \
 (3) Change the directory to ANSYS-Fluent/templates and upload the template to cyclecloud using \
-  cyclecloud import_template -f pbs-ansys.txt
-(4) The cluster template for ANSYS using PBS will now appear in the CycleCloud portal. 
+  cyclecloud import_template -f pbs-ansys.txt \
+(4) The cluster for ANSYS using PBS will now appear in the CycleCloud portal as PBS-ANSYS. \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys-Cluster.PNG)
-(5) 
+(5) To start the cluster: \
+  (a) Click on the PBS-ANSYS logo, enter a name for the cluster and click Next \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_1.PNG)
-    ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_2.PNG)
+  (b) Select the VM's for master node and compute nodes. Make sure the Auto-Scaling check box is selected and enter the maximum number of core counts for the cluster. In the Networking section, select the Compute subnet (not the storage) and click Next \
+     ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_2.PNG)
+  (c)  Make sure the settings appear as per this page and click Save \
     ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_3.PNG)
     https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
+  (d) The cluster will appear on the list, click on the Start button to start the master node of the cluster. \
+    ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_4.PNG)
+  
 
