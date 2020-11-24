@@ -61,15 +61,24 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
 (d) The cluster will appear on the list, click on the Start button to start the master node of the cluster. \
     ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_4.PNG) 
     
-(e) Connect (SSH in) to the head node from Azure bash and check whether the ANF volume is mounted. 
+(e) Connect (SSH in) to the head node from Azure bash and check whether the ANF volume is mounted. \
 ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_5.PNG) 
+
+(f) Here we can confirm that the Linux version of ANSYS has been installed on the share. \
 ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_6.PNG) 
 
- (6) Go to the Azure portal and deploy a Windows VM (F16 series) in the same VNet and the Resource group as Azure CycleCloud and ANF. 
+ (6) Go to the Azure portal and deploy a Windows VM (F16 series or similar) in the same VNet and the Resource group as Azure CycleCloud and ANF. 
  
- (7) Install the ANSYS package and configure the License Manager on this Windows VM. 
+ (7) Install the Windows version of ANSYS package and configure the License Manager on this Windows VM. 
  
- (8) 
+ (8) Open CMD on the Windows VM and generate the public and private keys as below. This is required to enable passwordless ssh into the Linux cluster \
+ ssh-keygen -t rsa \
+ The keys are generated in the C:\Users\.ssh folder on the Windows VM. Copy the id_rsa.pub key. 
+ 
+ (9) Go to the Cycle Portal. Navigate to Settings --> Users --> Create. Fill in the form to create the new user (Windows VM) and insert the copied public key for the Windows VM and hit save. This allows the keys to be propagated into all the nodes of the cluster
+ ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_7.PNG) 
+ 
+ 
   
   https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
 
