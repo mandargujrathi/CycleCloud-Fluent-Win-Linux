@@ -10,7 +10,7 @@ This deployment will feature the following: \
 
 (1) Azure Subscription \
 (2) Subscription whitelisted for Azure NetApp Files (ANF) \
-(3) Quota for HB_v2 VM's in the region of your choice \
+(3) Quota for HBv2 VM's in the Azure region of your choice \
 (4) Bring Your Own ANSYS Fluent License (HPC enabled) 
 
 ### Services used
@@ -18,7 +18,7 @@ This deployment will feature the following: \
 (2) Azure NetApp Files (ANF) 
 
 ## Architecture
-Following is the architecture which was developed to deploy Fluent leveraging a Linux Cluster from Windows Front End. \
+Following is the architecture which was developed to deploy Fluent leveraging a Linux Cluster from Windows Front End. 
 
 ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Architecture.PNG)
 
