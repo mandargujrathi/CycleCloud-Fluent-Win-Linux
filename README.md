@@ -103,11 +103,16 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
  (14) Once the Start button is clicked on the Launcher, CycleCloud will request 240 cores (translating to 2 nodes of HBv2) which will be getting prepared to spin up in Azure
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_15.PNG) \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_16.PNG)
-  These compute nodes will have the ANF share mounted on them to run the jobs. Once these nodes go green in the Cycle portal (which should be under 5 minutes), Fluent will display them on its console in the Windows VM.  
+  These compute nodes will have the ANF share mounted on them to run the jobs. Once these nodes go green in the Cycle portal (which should be under 5 minutes), Fluent will display them on its console in the Windows VM.  \
    ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_17.PNG)
    
- (15) 
+ (15) Before a Fluent case is loaded for calculations, make sure you specify the Idle timeout from File --> Idle Timeout in the Fluent GUI menu. This will make sure that Fluent will run the case, save the results and will exit upon completion to enable the job scheduler release the compute nodes. \
+ ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_18.PNG)
+ 
+ (16) ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_19.PNG)
   
+ (17) Run the calculations to the choice of your settings. Once calculations are complete Fluent will exit and cyclecloud will automatically scale the nodes down for cost optimisations. \
+ ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_20.PNG)
   
   
   https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
