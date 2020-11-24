@@ -116,4 +116,5 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_20.PNG)
   
   
- This completes the deployment of Fluent on Azure HPC. 
+ This completes the deployment of Fluent on Azure using the Infiniband-enabled VMs for High Performance Compute and Azure NetApp Files !
+ 
