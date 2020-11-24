@@ -15,7 +15,7 @@ This deployment will feature the following: \
 
 ### Services used
 (1) Azure Cycle Cloud \
-(2) Azure NetApp Files 
+(2) Azure NetApp Files (ANF) 
 
 ## Architecture
 
@@ -60,6 +60,16 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
     
 (d) The cluster will appear on the list, click on the Start button to start the master node of the cluster. \
     ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_4.PNG) 
+    
+(e) Connect (SSH in) to the head node from Azure bash and check whether the ANF volume is mounted. 
+![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_5.PNG) 
+![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_6.PNG) 
+
+ (6) Go to the Azure portal and deploy a Windows VM (F16 series) in the same VNet and the Resource group as Azure CycleCloud and ANF. 
+ 
+ (7) Install the ANSYS package and configure the License Manager on this Windows VM. 
+ 
+ (8) 
   
   https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
 
