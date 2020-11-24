@@ -94,15 +94,24 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
  (12) On the ANF share which is now mounted as Z:, do the following changes to the **fluent** script in the Linux installation. If  Linux version of ANSYS is installed in the folder ANSYS_Inc_Lnx then the script is found in Z:\ANSYS_Inc_Lnx\v202\fluent\bin path. These changes come approximately at Line 91 in the script \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_9.PNG) 
  
- (13) Start Fluent on the Windows VM with the Settings similar to the below :\
+ (13) Start Fluent on the Windows VM with the Settings similar to the below :
+ 
  (i) Mention the number of processes to start. These will be multiples of 120 as each compute node is 120 cores. \
-  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_10.PNG) \
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_10.PNG) 
+  
+  
   (ii) Select infiniband\
-  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_11.PNG) \
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_11.PNG) 
+  
+  
   (iii) List the host name of the master node \
-  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_12.PNG) \
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_12.PNG) 
+  
+  
   (iv) Make sure you select PBS Pro as the scheduler \
-  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_13.PNG) \
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_13.PNG) 
+  
+  
   (v) Define environment variables and hit Start\
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_14.PNG) 
     
