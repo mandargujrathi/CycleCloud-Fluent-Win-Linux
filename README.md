@@ -50,26 +50,32 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
   cyclecloud import_template -f pbs-ansys.txt \
 (4) The cluster for ANSYS using PBS will now appear in the CycleCloud portal as PBS-ANSYS. \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys-Cluster.PNG)
-(5) To start the cluster: \
+(5) To start the cluster: 
+  
 (a) Click on the PBS-ANSYS logo, enter a name for the cluster and click Next \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_1.PNG) 
   
+
 (b) Select the VM's for master node and compute nodes. Make sure the Auto-Scaling check box is selected and enter the maximum number of core counts for the cluster. In the Networking section, select the Compute subnet (not the storage) and click Next \
      ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_2.PNG) 
      
+
 (c)  Make sure the settings appear as per this page and click Save \
     ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_3.PNG) 
     
+
 (d) The cluster will appear on the list, click on the Start button to start the master node of the cluster. \
     ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_4.PNG) 
     
+
 (e) Connect (SSH in) to the head node from Azure bash and check whether the ANF volume is mounted. \
 ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_5.PNG) 
+
 
 (f) Here we can confirm that the Linux version of ANSYS has been installed on the share. \
 ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_6.PNG) 
 
- (6) Go to the Azure portal and deploy a Windows VM (F16 series or similar) in the same VNet and the Resource group as Azure CycleCloud and ANF. 
+(6) Go to the Azure portal and deploy a Windows VM (F16 series or similar) in the same VNet and the Resource group as Azure CycleCloud and ANF. 
  
  (7) Install the Windows version of ANSYS package and configure the License Manager on this Windows VM. Make sure the Firewall is tured off. 
  
