@@ -18,6 +18,7 @@ This deployment will feature the following: \
 (2) Azure NetApp Files (ANF) 
 
 ## Architecture
+Following is the architecture which was developed to deploy Fluent leveraging a Linux Cluster from Windows Front End. \
 
 ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Architecture.PNG)
 
@@ -110,11 +111,8 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
  (15) Before a Fluent case is loaded for calculations, make sure you specify the Idle timeout from File --> Idle Timeout in the Fluent GUI menu. This will make sure that Fluent will run the case, save the results and will exit upon completion to enable the job scheduler release the compute nodes. \
  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_18.PNG)
  
- (16) ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_19.PNG)
-  
- (17) Run the calculations to the choice of your settings. Once calculations are complete Fluent will exit and cyclecloud will automatically scale the nodes down for cost optimisations. \
+ (16) Run the calculations to the choice of your settings. Once calculations are complete Fluent will exit and cyclecloud will automatically scale the nodes down for cost optimisations. \
  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_20.PNG)
   
   
-  https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
-
+ This completes the deployment of Fluent on Azure HPC. 
