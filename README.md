@@ -101,7 +101,7 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_14.PNG) 
     
  (14) Once the Start button is clicked on the Launcher, CycleCloud will request 240 cores (translating to 2 nodes of HBv2) which will be getting prepared to spin up in Azure
-  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_15.PNG) 
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_15.PNG) \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_16.PNG)
   These compute nodes will have the ANF share mounted on them to run the jobs. Once these nodes go green in the Cycle portal (which should be under 5 minutes), Fluent will display them on its console in the Windows VM.  
    ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_17.PNG)
