@@ -1,0 +1,1 @@
+You will need to obtain a tar file of the Fluent installation from the ANSYS website and upload to the blobs folder
