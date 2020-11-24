@@ -67,17 +67,22 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
 (f) Here we can confirm that the Linux version of ANSYS has been installed on the share. \
 ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_6.PNG) 
 
- (6) Go to the Azure portal and deploy a Windows VM (F16 series or similar) in the same VNet and the Resource group as Azure CycleCloud and ANF. 
+ (6) Go to the Azure portal and deploy a Windows VM (F16 series or similar) in the same VNet and the Resource group as Azure CycleCloud and ANF. \
  
- (7) Install the Windows version of ANSYS package and configure the License Manager on this Windows VM. 
+ (7) Install the Windows version of ANSYS package and configure the License Manager on this Windows VM. Make sure the Firewall is tured off. \
  
  (8) Open CMD on the Windows VM and generate the public and private keys as below. This is required to enable passwordless ssh into the Linux cluster \
  ssh-keygen -t rsa \
- The keys are generated in the C:\Users\.ssh folder on the Windows VM. Copy the id_rsa.pub key. 
+ The keys are generated in the C:\Users\.ssh folder on the Windows VM. Copy the id_rsa.pub key. \
  
- (9) Go to the Cycle Portal. Navigate to Settings --> Users --> Create. Fill in the form to create the new user (Windows VM) and insert the copied public key for the Windows VM and hit save. This allows the keys to be propagated into all the nodes of the cluster
+ (9) Go to the Cycle Portal. Navigate to Settings --> Users --> Create. Fill in the form to create the new user (Windows VM) and insert the copied public key for the Windows VM and hit save. This allows the keys of the Windows VM to be propagated into all the nodes of the cluster \
  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_7.PNG) 
  
+ (10) From the CMD on the Windows node, ssh into the master node using its host name. You can gather the host name from the CycleCloud portal. This will allow the knownhosts file to be created. If you have an older knownhosts file, make sure you delete that to avoid a conflict while running Fluent. \
+ 
+ (11) On the Windows node, install the Windows NFSv4.1 client from below. This will allow to mount the ANF share on the Windows machine. 
+ https://www.cohortfs.com/windows-nfsv41-client-64-bit-0
+ From the Windows Explorer select map the netowrk drive for mounting the ANF share. You can obtain the server address by visiting the ANF pool resource within the Azure portal and navigating to mount instructions. \
  
   
   https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
