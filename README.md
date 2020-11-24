@@ -80,7 +80,9 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
  (9) Go to the Cycle Portal. Navigate to Settings --> Users --> Create. Fill in the form to create the new user (Windows VM) and insert the copied public key for the Windows VM and hit save. This allows the keys of the Windows VM to be propagated into all the nodes of the cluster \
  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_7.PNG) 
  
- (10) From the CMD on the Windows node, ssh into the master node using its host name. You can gather the host name from the CycleCloud portal. This will allow the knownhosts file to be created. If you have an older knownhosts file, make sure you delete that to avoid a conflict while running Fluent. 
+ (10) From the CMD on the Windows node, ssh into the master node using its host name. You can gather the host name from the CycleCloud portal. 
+ ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_21.PNG) \ 
+ This will allow the knownhosts file to be created. If you have an older knownhosts file, make sure you delete that to avoid a conflict while running Fluent. 
  
  (11) On the Windows node, install the Windows NFSv4.1 client from below. This will allow to mount the ANF share on the Windows machine. \
  https://www.cohortfs.com/windows-nfsv41-client-64-bit-0 \
