@@ -82,7 +82,11 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
  
  (11) On the Windows node, install the Windows NFSv4.1 client from below. This will allow to mount the ANF share on the Windows machine. 
  https://www.cohortfs.com/windows-nfsv41-client-64-bit-0
- From the Windows Explorer select map the netowrk drive for mounting the ANF share. You can obtain the server address by visiting the ANF pool resource within the Azure portal and navigating to mount instructions. \
+ From the Windows Explorer select map the network drive for mounting the ANF share (as Z:). You can obtain the server address by visiting the ANF pool resource within the Azure portal    and navigating to mount instructions. \
+ ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_8.PNG) 
+ 
+ (12) On the ANF share which is now mounted as Z:, do the following changes to the **fluent** script in the Linux installation. If  Linux version of ANSYS is installed in the folder ANSYS_Inc_Lnx then the script is found in Z:\ANSYS_Inc_Lnx\v202\fluent\bin path. These changes come approximately at Line 91
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_9.PNG) 
  
   
   https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
