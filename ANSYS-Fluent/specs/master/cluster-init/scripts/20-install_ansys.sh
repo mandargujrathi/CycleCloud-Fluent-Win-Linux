@@ -1,5 +1,9 @@
 #!/bin/bash
 set -ex
+# Note: This script is required to run only for the time when the ANF volume is set up for the FIRST use of ANSYS Fluent. 
+# If you are using the same volume (which has ANSYS Fluent already installed) for any new clusters that follow you may comment this script altogether. 
+# This script will ONLY run on the master node. 
+
 
 sudo chmod 777 /ansysshare
 sudo mkdir -p /ansysshare/ANSYS_Inc_Lnx
