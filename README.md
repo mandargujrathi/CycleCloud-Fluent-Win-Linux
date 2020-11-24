@@ -97,9 +97,11 @@ The steps below outline the process to deploy a NFS4.1 volume using Azure NetApp
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_12.PNG) \
   (iv) Make sure you select PBS Pro as the scheduler \
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_13.PNG) \
-  (v) Define environment variables \
+  (v) Define environment variables and hit Start\
   ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_14.PNG) 
-     
+    
+ (14) Once the Start button is clicked on the Launcher, CycleCloud will request 240 cores (translating to 2 nodes of HBv2) which will be getting prepared to spin up in Azure
+  ![alt text](https://github.com/mandargujrathi/CycleCloud-Fluent-Win-Linux/blob/main/Ansys_cycle_15.PNG) 
   
   https://docs.microsoft.com/en-us/azure/cyclecloud/how-to/projects?view=cyclecloud-8
 
