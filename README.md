@@ -11,7 +11,7 @@ This deployment will feature the following: \
 (1) Azure Subscription \
 (2) Subscription whitelisted for Azure NetApp Files (ANF) \
 (3) Quota for HBv2 VM's in the Azure region of your choice \
-(4) Bring Your Own ANSYS Fluent License (HPC enabled) 
+(4) Bring Your Own ANSYS Fluent License (HPC enabled) \
 (5) FLUIDS_2020R2_LINX64.tar must be uploaded to the blobs folder of the ANSYS Fluent project. This can be obtained from the ANSYS website. 
 
 ### Services used
