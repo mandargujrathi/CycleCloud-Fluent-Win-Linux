@@ -1,8 +1,9 @@
 #!/bin/bash
 set -ex
-# Note: This script is required to run only for the time when the ANF volume is set up for the FIRST use of ANSYS Fluent. 
+# Note: This script is required to run only when the ANF volume is set up for the FIRST use of ANSYS Fluent. 
 # If you are using the same volume (which has ANSYS Fluent already installed) for any new clusters that follow you may comment this script altogether. 
 # This script will ONLY run on the master node. 
+# FLUIDS_2020R2_LINX64.tar must be uploaded to the blobs folder. This can be obtained from the ANSYS website. 
 
 
 sudo chmod 777 /ansysshare
